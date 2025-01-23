@@ -1,0 +1,16 @@
+    return 5*(f-32)/9
+
+def cf(c):
+    return (9*c/5)+32
+
+temp = input("Do you want to convert celsius to fehreneit(cf) or fehreneit to celsius(fc): ")
+if temp == "fc":
+   f = int(input("Enter your temperature in fehereneit: "))
+   print(f"Your converted temperature is {round(fc(f), 2)}")
+
+elif temp == "cf":
+    c = int(input("Enter your temperature in celsius: "))
+    print(f"Your converted temperature is {round(cf(c), 2)}")
+
+else:
+    print("You didnt enter a correct term, try again")
